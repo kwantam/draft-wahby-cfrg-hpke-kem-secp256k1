@@ -72,6 +72,8 @@ Several implementations appear to have sprung up ad-hoc; this document is
 
 The secp256k1 elliptic curve is specified in {{SEC2v2}}, Section 2.4.1.
 DHKEM is specified in {{RFC9180}}, Section 4.
+In particular, the Decap, Encap, AuthDecap, and AuthEncap functions for
+    DHKEM are defined in Section 4.1 of that document.
 
 The secp256k1 DHKEM construction closely follows NIST-P256 DHKEM. See
     {{iana}} for the precise specification.
@@ -97,7 +99,8 @@ Conversion functions in this section are defined in {{SEC1v2}}.
 
 The DeriveKeyPair() function is as described in {{RFC9180}}, Section 7.1.3.
 For this curve, the bitmask value 0xff should be used.
-The order of the secp256k1 curve is given in {{SEC2v2}}.
+The order of the secp256k1 curve as defined in {{SEC2v2}}, Section 2.4.1, is
+    0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141.
 
 # Security Considerations
 
