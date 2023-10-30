@@ -129,6 +129,9 @@ This document requests/registers a new entry to the "HPKE KEM Identifiers"
  Nsk:
  : 32
 
+ Ndh:
+ : 32
+
  Auth:
  : yes
 
